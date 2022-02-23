@@ -1,0 +1,4 @@
+.entryButton{
+    -fx-background-image: url('com/example/classweek3/java.png');
+    -fx-background-size: 35px;
+}

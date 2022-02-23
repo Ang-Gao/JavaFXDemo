@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<BorderPane xmlns:fx="http://java.com/fxml" fx:controller="com.example.classweek3.AddItemController" prefHeight="300" prefWidth="400">
+    <top>
+        <Label fx:id="windowHint" text="Please Type Into Your Todo List" style="-fx-background-color: aqua " alignment="TOP_CENTER"/>
+    </top>
+
+    <center>
+        <VBox>
+            <Label text="Short description"/>
+            <Label text=" "/>
+            <TextField fx:id="shortDescTF" prefWidth="50" prefHeight="50" alignment="TOP_LEFT"/>
+            <Label text="Details"/>
+            <Label text=" "/>
+            <TextArea fx:id="detailDescTF" prefWidth="50" prefHeight="50"/>
+            <Label text=" "/>
+            <Label text="Date" style="-fx-text-fill: pink"/>
+            <DatePicker fx:id="datePicker"/>
+        </VBox>
+    </center>
+</BorderPane>
