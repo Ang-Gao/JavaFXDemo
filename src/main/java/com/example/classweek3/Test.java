@@ -1,5 +1,8 @@
 package com.example.classweek3;
 
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+
 public class Test {
 
     @org.junit.Test
@@ -15,5 +18,12 @@ public class Test {
 
         new Thread(t1).start();
         System.out.println(Thread.currentThread());
+    }
+    @org.junit.Test
+    public void threadPoolTest(){
+        Executor executor = Executors.newCachedThreadPool();
+        executor.execute(()->{
+            System.out.println("hello world");
+        });
     }
 }
